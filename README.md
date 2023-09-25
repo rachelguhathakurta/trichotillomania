@@ -1,43 +1,42 @@
-# trichotillomania
-A system for automated video therapy using machine learning to reduce unwanted body-focused behavior like trichotillomania requires a multi-step approach. 
-The 3 programs provide the following functions
+# Automated Video Therapy System for Reducing Unwanted Body-Focused Behavior
 
-**Data Collection:**
+## 1. Data Collection
+- Use **webcams** to capture videos of individuals displaying the unwanted behavior (forming the "positive" class).
+- Capture videos without the behavior for the "negative" class.
+- Accurately label these videos or frames.
 
-Using webcams, capture videos of individuals displaying the unwanted behavior. This will form the "positive" class.
-Capture videos without the behavior for the "negative" class.
-Label these videos or frames accurately.
-Data Preprocessing:
+## 2. Data Preprocessing
+- Convert videos into frames for ease of processing.
+- Employ techniques like resizing, normalization, and data augmentation (like rotations, flips) to enhance the dataset.
 
-Convert videos into frames for ease of processing.
-Use techniques like resizing, normalization, and data augmentation (rotations, flips) to enhance the dataset.
-Model Building using TensorFlow/Keras:
+## 3. Model Building using TensorFlow/Keras
+- Utilize **Convolutional Neural Networks (CNNs)**, as they excel with image/video data.
+- The architecture might comprise multiple convolutional layers, pooling layers, and fully connected layers, culminating in a binary classification (behavior present or not).
 
-Use Convolutional Neural Networks (CNNs) as they're effective for image/video data.
-The architecture could have multiple convolutional layers, pooling layers, and fully connected layers, ending with a binary classification (behavior present or not).
-Training:
+## 4. Training
+- Split data into training and validation sets.
+- Train the CNN on the training set and validate its performance on the validation set.
+- Integrate techniques like dropout for regularization and callbacks like early stopping to curb overfitting.
+- Preserve the model exhibiting the best performance on the validation data.
 
-Split the data into training and validation sets.
-Train the CNN on the training set while validating its performance on the validation set.
-Use techniques like dropout for regularization, and callbacks like early stopping to prevent overfitting.
-Save the model that performs best on the validation data.
-Detection in Real-time:
+## 5. Real-time Detection
+- Convert the video into frames in real-time using a webcam feed.
+- Feed each frame through the trained model to pinpoint the unwanted behavior.
+- On detecting the behavior, furnish immediate feedback, possibly an alert or sound.
 
-Using webcam feed, convert the video into frames in real-time.
-Pass each frame through the trained model to detect the unwanted behavior.
-If the behavior is detected, provide immediate feedback, which can be an alert or a sound.
-Positive Reinforcement:
+## 6. Positive Reinforcement
+- If the user abstains from the unwanted behavior for a designated duration, provide positive feedback. This could be encouraging messages or tangible rewards.
 
-If the system detects the user refraining from the unwanted behavior for a specified duration, provide positive feedback. This can be in the form of encouraging messages or even rewards.
-User Interface:
+## 7. User Interface
+- Design a **user-friendly interface** offering real-time feedback, tracking progress over time, and supplying resources for added assistance.
+- Prioritize addressing privacy concerns since this deals with sensitive personal data.
 
-Develop a user-friendly interface that provides real-time feedback, shows progress over time, and offers resources for further assistance.
-Ensure privacy concerns are addressed, as this is sensitive personal data.
-Model Updating:
+## 8. Model Updating
+- Periodically refresh the model with new data to enhance accuracy.
+- Solicit user feedback on false positives/negatives to refine the model further.
 
-Periodically retrain the model with new data to improve accuracy.
-Allow users to provide feedback on false positives/negatives to refine the model.
-Deployment:
+## 9. Deployment
+- Ensure seamless operation of the application with real-time webcam feeds.
+- Fine-tune the model for latency to offer instant feedback.
 
-Ensure the application runs smoothly with real-time webcam feeds.
-Optimize the model for latency to provide instant feedback.
+> **Note**: This is a broad conceptual framework. Actual implementation would require prioritizing privacy, having a robust dataset, rigorous training, and extensive testing. Ethical considerations, especially in the context of mental health or behavioral disorders, are of paramount importance.
