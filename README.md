@@ -1,7 +1,7 @@
 # Automated Video Therapy System for Reducing Unwanted Body-Focused Behavior
 
 ## 1. Data Collection
-- Use **webcams** to capture videos of individuals displaying the unwanted behavior (forming the "positive" class).
+- Use **webcam** to capture videos of individuals displaying the unwanted behavior (forming the "positive" class).
 - Capture videos without the behavior for the "negative" class.
 - Accurately label these videos or frames.
 
