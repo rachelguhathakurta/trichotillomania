@@ -2,7 +2,7 @@
 A system for automated video therapy using machine learning to reduce unwanted body-focused behavior like trichotillomania requires a multi-step approach. 
 The 3 programs provide the following functions
 
-Data Collection:
+**Data Collection:**
 
 Using webcams, capture videos of individuals displaying the unwanted behavior. This will form the "positive" class.
 Capture videos without the behavior for the "negative" class.
