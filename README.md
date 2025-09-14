@@ -39,4 +39,4 @@
 - Ensure seamless operation of the application with real-time webcam feeds.
 - Fine-tune the model for latency to offer instant feedback.
 
-> **Note**: This is a broad conceptual framework. Actual implementation would require prioritizing privacy, having a robust dataset, rigorous training, and extensive testing. Ethical considerations, especially in the context of mental health or behavioral disorders, are of paramount importance.
+
