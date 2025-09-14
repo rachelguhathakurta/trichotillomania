@@ -1,5 +1,15 @@
 # Automated Video Therapy System for Reducing Unwanted Body-Focused Behavior
+-----------------
+## Tech Stack
 
+- Python 3.8–3.12
+- TensorFlow 2.x — training/inference backend
+- Keras — high-level neural-net API (used in code via `import keras`)
+- OpenCV (`cv2`) — image I/O and preprocessing
+- NumPy — array ops and numerics
+- `keras.preprocessing.image.ImageDataGenerator` — on-the-fly data augmentation
+
+-----------------
 ## 1. Data Collection
 - Use **webcam** to capture videos of individuals displaying the unwanted behavior (forming the "positive" class).
 - Capture videos without the behavior for the "negative" class.
